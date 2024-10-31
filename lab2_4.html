@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 2.4 - Цикли for, while, do while</title>
+</head>
+<body>
+    <h2>Піднесення числа до степеня</h2>
+    <script>
+        // Запит числа і степеня у користувача
+        let number = parseInt(prompt("Введіть число:"));
+        let exponent = parseInt(prompt("Введіть степінь:"));
+        let result = 1;
+
+        // Використання циклу for
+        document.write("<h3>Використання оператора циклу FOR</h3>");
+        result = 1;
+        for (let i = 0; i < exponent; i++) {
+            result *= number;
+        }
+        document.write("Число " + number + " у степені " + exponent + " дорівнює " + result.toFixed(2) + ".<br>");
+
+        // Використання циклу while
+        document.write("<h3>Використання оператора циклу WHILE</h3>");
+        result = 1;
+        let count = 0;
+        while (count < exponent) {
+            result *= number;
+            count++;
+        }
+        document.write("Число " + number + " у степені " + exponent + " дорівнює " + result.toFixed(2) + ".<br>");
+
+        // Використання циклу do while
+        document.write("<h3>Використання оператора циклу DO WHILE</h3>");
+        result = 1;
+        count = 0;
+        do {
+            result *= number;
+            count++;
+        } while (count < exponent);
+        document.write("Число " + number + " у степені " + exponent + " дорівнює " + result.toFixed(2) + ".<br>");
+    </script>
+    <br>
+    <a href="index.html">Повернутися на головну сторінку</a>
+</body>
+</html>

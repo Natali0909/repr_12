@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 2.5 - Цикл for in</title>
+</head>
+<body>
+    <h2>Використання циклу for...in для продуктів у магазині</h2>
+    <script>
+        let products = {
+            "Молоко": 25,
+            "Хліб": 15,
+            "Цукор": 20,
+            "Яйця": 30,
+            "Сир": 80
+        };
+
+        document.write("<h3>Ціни на продукти:</h3>");
+        for (let item in products) {
+            document.write(item + ": " + products[item] + " грн<br>");
+        }
+    </script>
+    <br>
+    <a href="index.html">Повернутися на головну сторінку</a>
+</body>
+</html>

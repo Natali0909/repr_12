@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 2.6 - Гра з користувачем</title>
+</head>
+<body>
+    <h2>Гра: Вгадай число</h2>
+    <script>
+        let secretNumber = Math.floor(Math.random() * 10) + 1;
+        let guess;
+        let attempts = 0;
+
+        while (guess != secretNumber) {
+            guess = parseInt(prompt("Вгадай число від 1 до 10:"));
+            attempts++;
+
+            if (guess < secretNumber) {
+                alert("Загадане число більше.");
+            } else if (guess > secretNumber) {
+                alert("Загадане число менше.");
+            } else {
+                alert("Вітаємо! Ви вгадали число за " + attempts + " спроб(у/и).");
+            }
+        }
+    </script>
+    <br>
+    <a href="index.html">Повернутися на головну сторінку</a>
+</body>
+</html>
